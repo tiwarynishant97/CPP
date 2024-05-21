@@ -1,0 +1,54 @@
+	vector<int> vec;
+	// Write your code here.
+	int i = 0, j = 0;
+    while (i < n && j < m) {
+        if (arr1[i] < arr2[j])
+            i++;
+        else if (arr2[j] < arr1[i])
+            j++;
+        else /* if arr1[i] == arr2[j] */
+        {
+			vec.push_back(arr2[j]);
+            //cout << arr2[j] << " ";
+            i++;
+            j++;
+        }
+    }
+	return vec;
+
+
+
+
+//Not working code
+Intersection of 2 arrays
+vector<int> vec;
+	int big_size,small_size;
+	int big_arr[n],small_arr[m];
+	if (n>m){
+		big_arr[n],small_arr[m];
+		copy(arr1.begin(),arr1.end(),big_arr);
+		copy(arr2.begin(),arr2.end(),small_arr);
+		big_size=n;
+		small_size=m;
+	}
+	else{
+		big_arr[m],small_arr[n];
+		copy(arr2.begin(),arr2.end(),big_arr);
+		copy(arr1.begin(),arr1.end(),small_arr);
+		big_size=m;
+		small_size=n;
+	}
+
+	for (int i=0;i<small_size;i++){
+		for (int j=0;j<big_size;j++){
+			//if (big_arr[i]<small_arr[i]) {break;}
+			if (big_arr[j]==small_arr[i]){
+				vec.push_back(small_arr[i]);
+				printf("%d",small_arr[i]);
+				j++;
+				break;
+			}
+
+		}
+	}
+ return vec;

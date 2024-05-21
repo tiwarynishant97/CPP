@@ -1,0 +1,24 @@
+int findUnique(int *arr, int size)
+{
+    //Write your code here
+    int n=size;
+    int ufound=0;
+    int unique;
+    if (n==1){return arr[0];}
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if ((arr[i]==arr[j])&&(i!=j)){
+                ufound=0;
+                break;
+            }
+            else{
+                ufound=1;
+            }
+        }
+        if (ufound==1){
+            unique=arr[i];
+            break;
+        }
+    }
+    return unique;
+}

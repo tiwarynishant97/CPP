@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int bin_serach(int arr[],int l1,int key1){
+    int i=0;
+    int l=l1;
+    int mid=(i+l)/2;
+    //here instead if mid =i+l/2 
+    //use s+ (e-s)/2 
+    //so that for some problems it don't get out of range
+    int key=key1;
+    while (i<=l){
+        //cout <<"inside while i val : "<<i <<endl;
+        //cout<<"mid value is :"<<mid<<endl;
+        if (arr[mid]<key){
+            i=mid+1;
+            mid=(i+l)/2;
+            //cout<<"i value updated to : "<<i <<endl;
+            //cout<<"inside mid value is :"<<mid<<endl;
+        }
+        else if (arr[mid]>key){
+            l=mid-1;
+            mid=(i+l)/2;
+            //cout<<"i value updated to : "<<i <<endl;
+            //cout<<"inside mid value is :"<<mid<<endl;
+        }
+        else if(arr[mid]==key){
+            //cout <<"fount at "<<mid <<" Val is :"<<arr[mid]<<" \n";
+            return mid;
+        }
+    }
+    return -1;
+}
+
+int main()
+{
+    int arr[]={2,4,6,7,8,10};
+    int result =bin_serach(arr,5,10);
+    int result2 =bin_serach(arr,5,2);
+    cout << "result is "<<result <<endl;
+    cout << "result2 is "<<result2 <<endl;
+
+    return 0;
+}

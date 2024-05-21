@@ -1,0 +1,30 @@
+sum of triplets
+
+
+#include <bits/stdc++.h> 
+vector<vector<int>> findTriplets(vector<int>arr, int n, int K) {
+	// Write your code here.
+
+vector<vector<int>> triplet;
+	for(int i=0;i<n;i++){
+		for(int j=i+1;j<n;j++){
+			for(int l=j+1;l<n;l++){
+                if ((arr[i]+arr[j]+arr[l]) == K){
+                //cout<<"ijk val "<<i<<" "<<j<<" "<<l;
+				//cout<<"inside IF "<<arr[i]<<" "<<arr[j]<<" "<<arr[l]<<"\n";
+                vector<int> loc;
+                loc.push_back(arr[i]);
+                loc.push_back(arr[j]);
+                loc.push_back(arr[l]);
+                sort(loc.begin(),loc.end());
+                bool check = count(triplet.begin(), triplet.end(), loc);
+                if (!(check)){
+                triplet.push_back(loc);
+                }
+                }
+            }
+		}
+	}
+
+    return triplet;
+}

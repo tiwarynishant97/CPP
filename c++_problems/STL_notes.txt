@@ -1,0 +1,69 @@
+STL:
+
+It is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. 
+It is a library of container classes, algorithms, and iterators. 
+It is a generalized library and so, its components are parameterized
+
+range of containers, such as vectors, lists, and maps, as well as algorithms for searching, sorting and manipulating data
+
+Write an algorithm once, and then use it with different types of data without having to write separate code for each type
+
+STL has 4 components:
+
+Algorithms : such as sort, find, and binary_search, which can be used to manipulate data stored in containers.
+Containers : containers, such as vector, list, map, set, and stack, which can be used to store and manipulate data.
+Functors : are objects that can be used as function arguments to algorithms , pass a function to an algorithm, allowing you to customize its behavior.
+Iterators : provide a way to traverse the elements of a container , such as forward_iterator, bidirectional_iterator, and random_access_iterator, that can be used with different types of containers
+Adapters: modify the behavior of other components in the STL. For e.g, the reverse_iterator adapter can be used to reverse the order of elements in a container.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1 . Algorithms
+    defines a collection of functions specially designed to be used on a range of elements
+    act on containers and provide means for various operations for the contents of the containers
+
+    Algorithm
+		Sorting
+		Searching
+		Important STL Algorithms
+		Useful Array algorithms
+		Partition Operations
+	Numeric
+		valarray class
+2 . Containers
+	Total seven standards “first-class” container classes and three container adaptor classes and only seven header files that provide access to these containers or container adaptors.
+	
+	Sequence Containers: implement data structures that can be accessed in a sequential manner.
+		vector
+		list
+		deque
+		arrays
+		forward_list( Introduced in C++11)
+		Container Adaptors: provide a different interface for sequential containers.
+		queue
+		priority_queue
+		stack
+	Associative Containers: implement sorted data structures that can be quickly searched (O(log n) complexity).
+		set
+		multiset
+		map
+		multimap
+	Unordered Associative Containers: implement unordered data structures that can be quickly searched
+		unordered_set (Introduced in C++11)
+		unordered_multiset (Introduced in C++11)
+		unordered_map (Introduced in C++11)
+		unordered_multimap (Introduced in C++11)
+3 . Functors
+		classes that overload the function call operator. Instances of such classes are called function objects or functors. 
+		Functors allow the working of the associated function to be customized with the help of parameters to be passed
+4 . Iterators
+		iterators are used for working on a sequence of values. They are the major feature that allows generality in STL
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+From YT 
+-------
+Dequeue : inseration deleetion from both ends
+          no contagious memory location
+		  mayn fixed static arrays are used
+		  This is also dynamic
+		  
