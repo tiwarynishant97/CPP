@@ -1,0 +1,15 @@
+Diff bw func overloading and template
+>> both are example of polymorphism in OOPs
+>>Function overloading is used when multiple functions do quite similar (not identical) operations, 
+>>Templates are used when multiple functions do identical operations.
+
+What happens when there is a static member in a template class/function? 
+>>Each instance of a template contains its own static variable
+
+What is template specialization? 
+>>Template specialization allows us to have different codes for a particular data type
+
+//STudy later 
+template specialization
+
+
