@@ -1,0 +1,3 @@
+Public: All member functions and data members are accessible outside the class.
+Protected: All member functions and data members are accessible within the class and to the derived class.
+Private: All member functions and data members cannot be accessed outside the class
