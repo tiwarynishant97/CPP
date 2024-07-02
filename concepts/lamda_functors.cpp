@@ -16,5 +16,18 @@ int main() {
   // call the lambda function
   add(100, 78);
 
+
+  //lamda with return type
+  auto operation = []  (int a, int b,  string op) -> double {
+  if (op == "sum") {
+    // returns integer value
+    return a + b;
+  } 
+  else {
+    // returns double value
+    return (a + b) / 2.0;
+  }
+};
+
   return 0;
 }
