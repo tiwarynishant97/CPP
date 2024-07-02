@@ -1,1 +1,10 @@
 online learned concepts
+
+deep copy:
+if the variables of an object have been dynamically allocated, then it is required to do a Deep Copy in order to create a copy of the object.
+Shallow copy:
+In shallow copy, an object is created by simply copying the data of all variables of the original object
+If some variables are dynamically allocated memory from heap section, then the copied object variable will also reference the same memory location.
+This will create ambiguity and run-time errors, dangling pointer. 
+
+ C++ compiler implicitly creates a copy constructor and overloads assignment operator in order to perform shallow copy at compile time.
