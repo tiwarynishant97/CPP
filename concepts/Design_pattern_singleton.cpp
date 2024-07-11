@@ -1,5 +1,10 @@
-// Implementation of Singleton Class 
-// in C++
+//Steps to Implement Singleton Class in C++:
+
+//1. Make all the constructors of the class private.
+//2 .Delete the copy constructor of the class.
+//3 .Make a private static pointer that can point to the same class object (singleton class).
+//4 .Make a public static method that returns the pointer to the same class object (singleton class).
+
 #include <bits/stdc++.h>
 using namespace std;
  
