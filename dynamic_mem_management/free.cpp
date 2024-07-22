@@ -34,6 +34,7 @@ int main(){
                         for (int i = 0; i < n; ++i) {
                                 printf("%d, ", ptr[i]);
                         }
+			//If ptr does not point to a memory block allocated by calloc, malloc or realloc functions, it causes undefined behavior.
 			free(ptr);
 			printf("\nMalloc Memory successfully freed.\n");
                  }
